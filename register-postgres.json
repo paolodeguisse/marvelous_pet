@@ -5,7 +5,7 @@
         "database.hostname": "research",
         "database.port": "5432",
         "database.user": "kafka_admin",
-        "database.password": "your_marvelous_pass",
+        "database.password": "hey_boy_dont_look_at_my_password_!",
         "database.dbname": "kafka_db",
         "table.whitelist": "public.events",
         "database.server.name": "events",
