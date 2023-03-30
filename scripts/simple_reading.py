@@ -1,4 +1,5 @@
-from kafka import KafkaConsumer
+import logging
+logging.basicConfig(level=logging.DEBUG)
 
 settings = {
     "bootstrap_servers": "localhost:9092",
@@ -11,4 +12,5 @@ topic = "events.public.events"
 consumer = KafkaConsumer(topic, **settings)
 
 for message in consumer:
+    logging.debug(f"Received message: {message.value}")
     print(f"Received message: {message.value}")
