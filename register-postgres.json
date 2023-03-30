@@ -1,0 +1,24 @@
+{
+    "name": "events-connector",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "database.hostname": "research",
+        "database.port": "5432",
+        "database.user": "kafka_admin",
+        "database.password": "your_marvelous_pass",
+        "database.dbname": "kafka_db",
+        "table.whitelist": "public.events",
+        "database.server.name": "events",
+        "include.unsupported.datatypes": "false",
+        "transforms": "unwrap",
+        "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+        "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+        "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+        "key.converter.schemas.enable": "false",
+        "value.converter.schemas.enable": "false",
+        "offset.storage.topic": "events-offset",
+        "offset.flush.interval.ms": "10000",
+        "topic.prefix": "postgres-",
+        "plugin.name": "pgoutput"
+    }
+}
