@@ -26,3 +26,9 @@ after this 100% you need to do this:
 register-postgres:
         curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @register-postgres.json
  ```
+
+if logs of Kafka show DNS problems:
+ ```
+nano /etc/hosts
+127.0.0.1 kafka
+ ```
