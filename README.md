@@ -5,6 +5,9 @@ docker compose up -d
 
 Step 2, Start the Debezium connector
  ```
+apt update -y && \
+apt install python3-pip -y
+pip install kafka-python
 pip install torch
 pip install transformers
 pip install pandas
@@ -16,13 +19,3 @@ git lfs install
 git clone https://huggingface.co/blanchefort/rubert-base-cased-sentiment-rusentiment
 ```
 
-Tp verifu the connector is running:
- ```
-curl 
- ```
- 
- 
-Step 3, create topic
- ```
-cr
-```
