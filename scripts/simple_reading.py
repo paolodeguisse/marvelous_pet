@@ -1,4 +1,5 @@
 import logging
+from kafka import KafkaConsumer
 logging.basicConfig(level=logging.DEBUG)
 
 settings = {
