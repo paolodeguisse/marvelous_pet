@@ -17,5 +17,7 @@ pip install -U setuptools
 apt install git-lfs
 git lfs install
 git clone https://huggingface.co/blanchefort/rubert-base-cased-sentiment-rusentiment
+pip3 install psycopg2-binary
+pip3 install sqlalchemy
 ```
 
