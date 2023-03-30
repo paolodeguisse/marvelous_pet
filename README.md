@@ -21,3 +21,8 @@ pip3 install psycopg2-binary
 pip3 install sqlalchemy
 ```
 
+after this 100% you need to do this:
+ ```
+register-postgres:
+        curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @register-postgres.json
+ ```
