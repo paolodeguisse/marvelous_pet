@@ -2,7 +2,7 @@
     "name": "events-connector",
     "config": {
         "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
-        "database.hostname": "research",
+        "database.hostname": "research_database",
         "database.port": "5432",
         "database.user": "kafka_admin",
         "database.password": "hey_boy_dont_look_at_my_password_!",
